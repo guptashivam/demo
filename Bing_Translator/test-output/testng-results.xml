@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="317197" started-at="2016-03-01T08:30:11Z" finished-at="2016-03-01T08:35:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="317197" started-at="2016-03-01T08:30:11Z" finished-at="2016-03-01T08:35:28Z">
+      <class name="com.example.demo.test.BingTest">
+        <test-method status="PASS" signature="openUrl()[pri:0, instance:com.example.demo.test.BingTest@233c0b17]" name="openUrl" is-config="true" duration-ms="20933" started-at="2016-03-01T14:00:11Z" finished-at="2016-03-01T14:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method status="PASS" signature="translateWord()[pri:0, instance:com.example.demo.test.BingTest@233c0b17]" name="translateWord" duration-ms="296254" started-at="2016-03-01T14:00:32Z" finished-at="2016-03-01T14:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- translateWord -->
+      </class> <!-- com.example.demo.test.BingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

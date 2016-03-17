@@ -1,12 +1,13 @@
 package com.qainfotech.demo.automatewebsite;
 
 import org.openqa.selenium.WebDriver;
+
 import com.qainfotech.demo.UI.Draganddroppagefactory;
 
 public class Draganddroppage {
 	public void openingdraganddroppage(WebDriver driver){
 		Draganddroppagefactory initlizewebelements=new Draganddroppagefactory(driver);
-		
+	
 		initlizewebelements.getdraganddroppagelink().click();
 		String a=initlizewebelements.getfirstimage().getText();
 		org.openqa.selenium.Point point=initlizewebelements.getfirstimage().getLocation();
