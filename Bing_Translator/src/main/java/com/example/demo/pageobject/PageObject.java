@@ -14,7 +14,7 @@ public class PageObject
 		this.driver = driver;
 	}
 	
-	@FindBy(id = "HeaderTitle_DstLangList")
+	@FindBy(xpath = "//div[contains(@class,'destinationText')]//div[@class='dropdownArrow']")
 	private WebElement btnDropdownForTranslatedWord;
 	
 	public WebElement getBtnDropdownForTranslatedWord(){
@@ -22,17 +22,17 @@ public class PageObject
 	}
 	
 	public WebElement getLanguageLnk(String language){
-		return driver.findElement(By.xpath("(//a[text()='"+language+"'])[2]"));
+		return driver.findElement(By.xpath("(//td[text()='"+language+"'])[2]"));
 	}
 	
-	@FindBy(xpath = "//div[@id='OutputText']//span")
+	@FindBy(id = "destText")
 	private WebElement txtboxOfTranslatedWord;
 	
 	public WebElement getTxtboxOfTranslatedWord(){
 		return txtboxOfTranslatedWord;
 	}
 	
-	@FindBy(id = "InputText")
+	@FindBy(id = "srcText")
 	private WebElement txtboxTranslateWord;
 	
 	public WebElement getTxtboxTranslateWord(){

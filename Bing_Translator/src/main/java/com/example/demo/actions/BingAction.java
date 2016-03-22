@@ -32,7 +32,6 @@ public class BingAction {
 		try{
 			ArrayList<String> csvData = readFile.readCSVFile("wordsForTranslation.csv");
 			for(int i=0;i<csvData.size();i++){
-				System.out.println(csvData.get(i));
 				rowData = csvData.get(i).split(",");
 				clickOnLangauageLnkUnderDropdown(rowData[2]);
 				pb.getTxtboxTranslateWord().clear();
@@ -45,7 +44,6 @@ public class BingAction {
 				pb.getTxtboxTranslateWord().sendKeys(frstTranslatedWord);
 				Thread.sleep(2000);
 				secondTranslatedWord = translateWord();
-				System.out.println(secondTranslatedWord);
 				Assert.assertTrue(rowData[1].equals(secondTranslatedWord));
 			}
 		}catch(Exception e){

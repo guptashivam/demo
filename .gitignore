@@ -24,6 +24,12 @@ automatewebsite/target/**
 /bin/
 
 
+Bing_Translator/.project
+Bing_Translator/.classpath
+Bing_Translator/test-output/**
+Bing_Translator/.settings
+
+Bing_Translator/target/**
 
 
 target/**
