@@ -17,7 +17,7 @@ public class BingTest {
 	@BeforeMethod
 	public void openUrl(){
 		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://www.bing.com/translator/");
 		bingAction = new BingAction(driver);
